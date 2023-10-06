@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary brand color for Expense Tracker app -->
+    <color name="expense_primary">#FF1A1423</color>
+    <color name="expense_primary_variant">#FF221c2a</color> <!-- Slight variation -->
+
+    <!-- Secondary brand color for Expense Tracker app -->
+    <color name="expense_secondary">#FF774C60</color>
+    <color name="expense_secondary_variant">#FFB75D69</color>
+
+    <!-- Text color on primary and secondary colors -->
+    <color name="expense_text_on_primary">#FFEACDC2</color>
+    <color name="expense_text_on_secondary">#FFFFFFFF</color>
+
+    <!-- Background color for the app -->
+    <color name="expense_background">#FFEACDC2</color>
+    <!-- other colors -->
+    <color name="expense_green">#FF0C470F</color>
+    <color name="expense_red">#FFB10E00</color>
+    <color name="expense_orange">#FFff7137</color>
+    <color name="expense_card_view">#FF1D2314</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <color name="blue">#FF004e89</color>
+    <color name="light_blue">#4283B4</color>
+    <color name="beige">#FFf8e4c9</color>
+    <color name="dark_grey">#616161</color>
+</resources>

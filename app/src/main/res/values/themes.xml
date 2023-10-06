@@ -1,0 +1,25 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ExpenseTrackerApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- Primary brand color for Expense Tracker app -->
+        <item name="colorPrimary">@color/expense_primary</item>
+        <item name="colorPrimaryVariant">@color/expense_primary_variant</item>
+        <item name="colorOnPrimary">@color/expense_text_on_primary</item> <!-- Text color on the primary color -->
+
+        <!-- Secondary brand color for Expense Tracker app -->
+        <item name="colorSecondary">@color/expense_secondary</item>
+        <item name="colorSecondaryVariant">@color/expense_secondary_variant</item>
+        <item name="colorOnSecondary">@color/expense_text_on_secondary</item> <!-- Text color on the secondary color -->
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Background color for the app -->
+        <item name="android:windowBackground">@color/expense_background</item>
+
+    </style>
+</resources>

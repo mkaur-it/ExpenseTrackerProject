@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home_icon"
+        android:titleTextColor="@color/white"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/income"
+        android:title="Add Income"
+        android:icon="@drawable/income_icon"
+        android:titleTextColor="@color/white"
+        android:visible="true"/>
+
+    <item
+        android:id="@+id/expense"
+        android:title="Add Expense"
+        android:icon="@drawable/expense_icon"
+        android:titleTextColor="@color/white"
+        android:visible="true"/>
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        android:icon="@drawable/logout_icon"
+        android:titleTextColor="@color/white"
+        android:visible="true"/>
+
+</menu>

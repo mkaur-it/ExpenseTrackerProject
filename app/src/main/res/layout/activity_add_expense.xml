@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/expense_background"
+    tools:context=".AddExpenseActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="1dp"
+        app:subtitleTextColor="@android:color/white"
+        app:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Add App Icon and Title -->
+        <ImageView
+            android:id="@+id/appIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_icon"
+            android:layout_gravity="start"
+            android:layout_marginStart="16dp"
+            android:contentDescription="@string/app_name"
+            />
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        app:contentPadding="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/expense_primary"
+        app:layout_constraintTop_toBottomOf="@id/topAppBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Vertical LinearLayout inside the CardView -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <!-- TextView and EditText for "Amount" -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/expense_primary"
+                    android:text="@string/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_amount"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textColorHint="@color/dark_grey"
+                    tools:ignore="LabelFor,VisualLintTextFieldSize"
+                    android:autofillHints="" />
+                <RadioGroup
+                    android:id="@+id/typeRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+                    <RadioButton
+                        android:id="@+id/incomeRadio"
+                        android:text="@string/income"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/expense_primary"/>
+                    <RadioButton
+                        android:id="@+id/expenseRadio"
+                        android:text="@string/expense"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/expense_primary"/>
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <!-- TextView and EditText for "Note" -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/expense_primary"
+                    android:text="@string/note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                </TextView>
+
+                <EditText
+                    android:id="@+id/note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/expense_description"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="@color/dark_grey"
+                    tools:ignore="VisualLintTextFieldSize"
+                    android:autofillHints="" />
+            </LinearLayout>
+            <!-- TextView and EditText for "Category" -->
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/category"
+                    android:textColor="@color/expense_primary">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="@string/enter_category"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColorHint="@color/dark_grey"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/expense_primary"
+    tools:context=".SignUpActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="24dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="36sp"
+                android:textColor="@color/expense_primary"
+                android:textStyle="bold"
+                android:textAlignment="center">
+
+            </TextView>
+            <EditText
+                android:id="@+id/signup_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:hint="Name"
+                android:drawableLeft="@drawable/person"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black">
+
+            </EditText>
+            <EditText
+                android:id="@+id/signup_email"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="Email"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black">
+
+            </EditText>
+            <EditText
+                android:id="@+id/signup_username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="Username"
+                android:drawableLeft="@drawable/person_pin"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black">
+
+            </EditText>
+            <EditText
+                android:id="@+id/signup_password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/password_lock"
+                android:drawablePadding="8dp"
+                android:textColor="@color/black">
+
+            </EditText>
+            <Button
+                android:id="@+id/signup_button"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Sign up "
+                android:textSize="18sp"
+                android:layout_marginTop="30dp">
+
+            </Button>
+            <TextView
+                android:id="@+id/loginRedirectText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already an user? Login"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/expense_primary"
+                android:textSize="18sp"
+                android:gravity="center">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:contentPadding="3dp"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/expense_text_on_primary">
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+            <TextView
+                android:id="@+id/note"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:text="@string/note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/category"
+                android:textSize="16sp"
+                android:text="@string/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/amount"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/expense_green"
+                android:text="@string/text_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

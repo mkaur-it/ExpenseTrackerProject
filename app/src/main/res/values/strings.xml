@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string name="add_income">Add Income</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="amount">Amount</string>
+    <string name="note">Note</string>
+    <string name="category">Category</string>
+    <string name="income">Income</string>
+    <string name="expense">Expense</string>
+    <string name="enter_amount">Enter amount</string>
+    <string name="enter_category">Enter category</string>
+    <string name="expense_description">Transaction description</string>
+    <string name="save">Save</string>
+    <string name="date">Date</string>
+    <string name="text_100">100</string>
+    <string name="cad">CAD</string>
+    <string name="custom_icon_description">Done !</string>
+    <string name="toast_message">Your message goes here</string>
+    <string name="greeting">Welcome to Expense Tracker</string>
+    <string name="img_description">App logo for Splash Screen</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="login_in">Login in</string>
+</resources>
